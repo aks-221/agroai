@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AGRO-AI</title>
+    <link rel="stylesheet" href="me.css">
+</head>
+<body>
+    <header>
+    <div class="logo">
+      <img src="WhatsApp Image 2025-01-04 à 20.59.04_f78fc0b7.jpg" alt="Image du logo">
+      <h2>Welcome to AGROAI</h2>
+
+
+  </div>
+  </header>
+            <nav>
+                <button id="menuToggle" class="menu-toggle">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <line x1="4" x2="20" y1="12" y2="12"/>
+                        <line x1="4" x2="20" y1="6" y2="6"/>
+                        <line x1="4" x2="20" y1="18" y2="18"/>
+                    </svg>
+                </button>
+            </nav>
+        </div>
+    </header>
+
+    <main class="container">
+        <div class="grid-2">
+            <section class="weather-widget card">
+                <h2>Local Weather</h2>
+                <div class="weather-grid">
+                    <div class="weather-item">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="sun">
+                            <circle cx="12" cy="12" r="4"/>
+                            <path d="M12 2v2"/>
+                            <path d="M12 20v2"/>
+                            <path d="m4.93 4.93 1.41 1.41"/>
+                            <path d="m17.66 17.66 1.41 1.41"/>
+                            <path d="M2 12h2"/>
+                            <path d="M20 12h2"/>
+                            <path d="m6.34 17.66-1.41 1.41"/>
+                            <path d="m19.07 4.93-1.41 1.41"/>
+                        </svg>
+                        <span id="temperature">22°C</span>
+                    </div>
+                    <div class="weather-item">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="cloud">
+                            <path d="M17.5 19H9a7 7 0 1 1 6.71-9h1.79a4.5 4.5 0 1 1 0 9Z"/>
+                        </svg>
+                        <span id="humidity">65%</span>
+                    </div>
+                    <div class="weather-item">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="rain">
+                            <path d="M7 16.3c2.2 0 4-1.83 4-4.05 0-1.16-.57-2.26-1.71-3.19S7.29 6.75 7 5.3c-.29 1.45-1.14 2.84-2.29 3.76S3 11.1 3 12.25c0 2.22 1.8 4.05 4 4.05z"/>
+                            <path d="M17 16.3c2.2 0 4-1.83 4-4.05 0-1.16-.57-2.26-1.71-3.19S17.29 6.75 17 5.3c-.29 1.45-1.14 2.84-2.29 3.76S13 11.1 13 12.25c0 2.22 1.8 4.05 4 4.05z"/>
+                        </svg>
+                        <span id="rainfall">0mm</span>
+                    </div>
+                </div>
+            </section>
+
+            <section class="sensor-data card">
+                <h2>sensors data</h2>
+                <div id="sensorData">
+                    <!-- Sensor data will be added here by JavaScript -->
+                </div>
+            </section>
+        </div>
+
+        <section class="irrigation-control card">
+            <h2>Intelligent Irrigation Control</h2>
+            <div id="irrigationZones">
+                <!-- Zones will be added here by JavaScript -->
+            </div>
+        </section>
+
+        
+    </main>
+
+    <footer>
+        <div class="container footer-content">
+            <div class="footer-section">
+                <h3>AGRO-AI</h3>
+                <p>Innovative solution for smart agriculture</p>
+            </div>
+            <div class="footer-section">
+                <h3>Contact</h3>
+                <p>Email: agroaisenegal@gmail.com</p>
+                <p>Tel: +221 77 122 72 56</p>
+            </div>
+            <div class="footer-section">
+                <h3>Legal</h3>
+                <p>© 2024 AGRO-AI. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
