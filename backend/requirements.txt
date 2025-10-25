@@ -1,10 +1,19 @@
+# --- outils essentiels de build ---
 setuptools>=68.0.0
 wheel>=0.40.0
 pip>=23.0.0
-flask==3.0.2
-flask-cors==4.0.0
-numpy==1.25.0
-pandas==2.1.1
-scikit-learn==1.3.2
-joblib==1.3.2
+
+# --- dépendances principales ---
+Flask==3.0.2
+Flask-Cors==4.0.0
 gunicorn==21.2.0
+
+# --- dépendances IA / ML ---
+numpy==2.1.1
+pandas==2.2.3
+scikit-learn==1.5.2
+scipy==1.16.2
+joblib==1.4.2
+python-dateutil==2.9.0.post0
+threadpoolctl==3.6.0
+tzdata==2025.2
