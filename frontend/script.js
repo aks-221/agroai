@@ -1,5 +1,5 @@
 // Connexion avec l'API
-const API_URL = 'http://localhost:5000/api';
+const API_URL = 'https://agroai-vn9q.onrender.com/api';
 
 // État global de l'application
 let sensorData = {
