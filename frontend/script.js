@@ -235,16 +235,22 @@ function toggleIrrigation(id) {
     }
 }
 
-// Initialisation
 document.addEventListener('DOMContentLoaded', () => {
     updateSensorDisplay();
     renderIrrigationZones();
-    
+
     // Première récupération des données
     fetchSensorData();
-    
+
+    // Lancer immédiatement la prédiction pour les zones en Auto
+    irrigationZones.forEach(zone => {
+        if (zone.autoMode) {
+            predictIrrigation();
+        }
+    });
+
     // Mise à jour périodique
     setInterval(() => {
         simulateSensors();
-    },100000);
+    }, 100000); // 100s
 });
